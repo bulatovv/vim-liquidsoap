@@ -12,7 +12,7 @@ syn keyword liquidsoapConditonal if else end
 syn match   liquidsoapSharpBang "\%^#!.*" display
 syn match   liquidsoapComment "#.*" contains=liquidsoapSharpBang
 syn match   liquidsoapNumber '\d\+'
-
+syn keyword liquidsoapBoolean true false
 
 
 " Interpolation
@@ -24,4 +24,5 @@ hi def link liquidsoapFunction Keyword
 hi def link liquidsoapConditonal Keyword
 hi def link liquidsoapComment Comment
 hi def link liquidsoapNumber Number
+hi def link liquidsoapBoolean Boolean
 hi def link liquidsoapInterpolation Delimiter
