@@ -13,7 +13,8 @@ syn match   liquidsoapSharpBang "\%^#!.*" display
 syn match   liquidsoapComment "#.*" contains=liquidsoapSharpBang
 syn match   liquidsoapNumber '\d\+'
 syn keyword liquidsoapBoolean true false
-
+syn region liquidsoapString start=+"+ end=+"+
+syn region liquidsoapString start=+'+ end=+'+
 
 " Interpolation
 syn region liquidsoapInterpolation start="#{" end="}"
@@ -26,3 +27,4 @@ hi def link liquidsoapComment Comment
 hi def link liquidsoapNumber Number
 hi def link liquidsoapBoolean Boolean
 hi def link liquidsoapInterpolation Delimiter
+hi def link liquidsoapString String
