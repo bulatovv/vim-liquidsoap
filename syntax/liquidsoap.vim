@@ -11,14 +11,14 @@ syn keyword liquidsoapFunction def end
 syn keyword liquidsoapConditonal if else end
 
 " Comments
-syn match   liquidsoapSharpBang "\%^#!.*" display
-syn match   liquidsoapComment "#.*" contains=liquidsoapSharpBang
+syn match liquidsoapSharpBang "\%^#!.*" display
+syn match liquidsoapComment "#.*" contains=liquidsoapSharpBang
 
 " Literals
 syn match   liquidsoapNumber '\d\+'
 syn keyword liquidsoapBoolean true false
-syn region liquidsoapString start=+"+ end=+"+
-syn region liquidsoapString start=+'+ end=+'+
+syn region  liquidsoapString start=+"+ end=+"+
+syn region  liquidsoapString start=+'+ end=+'+
 
 " Interpolation
 syn region liquidsoapInterpolation start="#{" end="}"
