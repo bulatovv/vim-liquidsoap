@@ -13,7 +13,9 @@ syn match   liquidsoapSharpBang "\%^#!.*" display
 syn match   liquidsoapComment "#.*" contains=liquidsoapSharpBang
 syn match   liquidsoapNumber '\d\+'
 
-" interpolation
+
+
+" Interpolation
 syn region liquidsoapInterpolation start="#{" end="}"
 
 let b:current_syntax = "liquidsoap"
